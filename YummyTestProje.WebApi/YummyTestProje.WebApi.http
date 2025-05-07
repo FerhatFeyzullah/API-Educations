@@ -1,0 +1,6 @@
+@YummyTestProje.WebApi_HostAddress = http://localhost:5255
+
+GET {{YummyTestProje.WebApi_HostAddress}}
+Accept: application/json
+
+###
