@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using YummyTestProje.WebApi.Context;
+using YummyTestProje.WebApi.DTO.CategoryDTO;
 using YummyTestProje.WebApi.Entities;
 
 namespace YummyTestProje.WebApi.Controllers
@@ -10,16 +13,21 @@ namespace YummyTestProje.WebApi.Controllers
     public class CategoriesController : ControllerBase
     {
         private readonly ApiContext _context;
+        private readonly IMapper _mapper;
 
-        public CategoriesController(ApiContext context)
+        public CategoriesController(ApiContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
+
+
         [HttpPost]
-        public IActionResult CreateCategory(Category category)
+        public IActionResult CreateCategory(CreateCategoryDTO createCategoryDTO)
         {
-            _context.Categories.Add(category);
+            var value = _mapper.Map<Category>(createCategoryDTO);
+            _context.Categories.Add(value);
             _context.SaveChanges();
             return Ok("Kategori Ekleme Islemi Basarili");
         }
@@ -30,6 +38,7 @@ namespace YummyTestProje.WebApi.Controllers
             var value = _context.Categories.ToList();
             return Ok(value);
         }
+       
 
         [HttpDelete]
         public IActionResult DeleteCategory(int id)
@@ -49,7 +58,7 @@ namespace YummyTestProje.WebApi.Controllers
         }
 
         [HttpGet("GetCategory")]
-        public IActionResult GetCategory(int id) 
+        public IActionResult GetCategory(int id)
         {
             var value = _context.Categories.Find(id);
             return Ok(value);
