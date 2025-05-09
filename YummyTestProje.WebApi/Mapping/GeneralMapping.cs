@@ -25,6 +25,8 @@ namespace YummyTestProje.WebApi.Mapping
 
             CreateMap<Product,CreateProductDTO>().ReverseMap();
             CreateMap<Product, ResultProductWithCategoryDTO>().ForMember(x=>x.CategoryName,y=>y.MapFrom(z => z.Category.CategoryName)).ReverseMap();
+            CreateMap<Product, UpdateProductDTO>().ReverseMap();
+
 
             CreateMap<Category, CreateCategoryDTO>().ReverseMap();
             

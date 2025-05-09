@@ -3,14 +3,15 @@ using FluentValidation;
 using YummyTestProje.WebApi.Context;
 using YummyTestProje.WebApi.DTO.ProductDTO;
 using YummyTestProje.WebApi.Entities;
-using YummyTestProje.WebApi.ValidationRules;
+using YummyTestProje.WebApi.ValidationRules.ProductValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddDbContext<ApiContext>();
-builder.Services.AddScoped<IValidator<CreateProductDTO>, ProductDTOValidator>();
+builder.Services.AddScoped<IValidator<CreateProductDTO>, CreateProductDTOValidator>();
+builder.Services.AddScoped<IValidator<UpdateProductDTO>, UpdateProductDTOValidator>();
 
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 

@@ -1,11 +1,12 @@
-﻿using FluentValidation;
+﻿
+using FluentValidation;
 using YummyTestProje.WebApi.DTO.ProductDTO;
 
-namespace YummyTestProje.WebApi.ValidationRules
+namespace YummyTestProje.WebApi.ValidationRules.ProductValidation
 {
-    public class ProductDTOValidator :AbstractValidator<CreateProductDTO>
+    public class UpdateProductDTOValidator:AbstractValidator<UpdateProductDTO>
     {
-        public ProductDTOValidator()
+        public UpdateProductDTOValidator()
         {
             RuleFor(x => x.ProductName)
                 .NotEmpty().WithMessage("Urun Adini Bos Gecmeyin")

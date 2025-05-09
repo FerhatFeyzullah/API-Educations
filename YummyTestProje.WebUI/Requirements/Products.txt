@@ -1,0 +1,198 @@
+﻿[
+  {
+    "productName": "Serpme Kahvaltı",
+    "productDescription": "Peynir, zeytin, bal, kaymak, reçel ve sıcak ekmeklerle zengin kahvaltı tabağı",
+    "price": 150,
+    "imageUrl": "test",
+    "categoryId": 1
+  },
+  {
+    "productName": "Menemen",
+    "productDescription": "Domates, biber ve yumurtayla yapılan geleneksel Türk yemeği",
+    "price": 60,
+    "imageUrl": "test",
+    "categoryId": 1
+  },
+  {
+    "productName": "Sucuklu Yumurta",
+    "productDescription": "Tavada sucuk ve yumurtayla yapılan kahvaltılık lezzet",
+    "price": 70,
+    "imageUrl": "test",
+    "categoryId": 1
+  },
+  {
+    "productName": "Kahvaltı Tabağı",
+    "productDescription": "Peynir, zeytin, domates, salatalık ve haşlanmış yumurtayla klasik tabak",
+    "price": 80,
+    "imageUrl": "test",
+    "categoryId": 1
+  },
+  {
+    "productName": "Mercimek Çorbası",
+    "productDescription": "Kırmızı mercimekten yapılan sıcak ve besleyici çorba",
+    "price": 45,
+    "imageUrl": "test",
+    "categoryId": 2
+  },
+  {
+    "productName": "Ezogelin Çorbası",
+    "productDescription": "Baharatlı, yöresel kırmızı mercimek çorbası",
+    "price": 50,
+    "imageUrl": "test",
+    "categoryId": 2
+  },
+  {
+    "productName": "Tavuk Suyu Çorbası",
+    "productDescription": "Şifa dolu tavuk suyundan yapılmış klasik çorba",
+    "price": 55,
+    "imageUrl": "test",
+    "categoryId": 2
+  },
+  {
+    "productName": "Domates Çorbası",
+    "productDescription": "Üzerine rendelenmiş kaşarla servis edilen sıcak çorba",
+    "price": 50,
+    "imageUrl": "test",
+    "categoryId": 2
+  },
+  {
+    "productName": "Izgara Köfte",
+    "productDescription": "Baharatlı kıymadan yapılan ızgara köfte",
+    "price": 120,
+    "imageUrl": "test",
+    "categoryId": 3
+  },
+  {
+    "productName": "Tavuk Izgara",
+    "productDescription": "Marine edilmiş tavuk göğsü ızgarada pişirilmiş",
+    "price": 110,
+    "imageUrl": "test",
+    "categoryId": 3
+  },
+  {
+    "productName": "Et Şiş",
+    "productDescription": "Terbiyeli dana eti şişe geçirilerek ızgarada pişirilmiş",
+    "price": 140,
+    "imageUrl": "test",
+    "categoryId": 3
+  },
+  {
+    "productName": "Adana Kebap",
+    "productDescription": "Acılı dana kıymasından yapılan kebap",
+    "price": 130,
+    "imageUrl": "test",
+    "categoryId": 3
+  },
+  {
+    "productName": "Mevsim Salata",
+    "productDescription": "Taze yeşilliklerle hazırlanan mevsim salatası",
+    "price": 40,
+    "imageUrl": "test",
+    "categoryId": 4
+  },
+  {
+    "productName": "Çoban Salata",
+    "productDescription": "Domates, salatalık, biber ve soğanla hazırlanan geleneksel salata",
+    "price": 45,
+    "imageUrl": "test",
+    "categoryId": 4
+  },
+  {
+    "productName": "Ton Balıklı Salata",
+    "productDescription": "Ton balığı, mısır ve yeşilliklerle hazırlanmış salata",
+    "price": 60,
+    "imageUrl": "test",
+    "categoryId": 4
+  },
+  {
+    "productName": "Akdeniz Salatası",
+    "productDescription": "Zeytin, beyaz peynir ve yeşilliklerle hazırlanmış salata",
+    "price": 55,
+    "imageUrl": "test",
+    "categoryId": 4
+  },
+  {
+    "productName": "Etli Nohut",
+    "productDescription": "Kuzu etiyle pişirilmiş nohut yemeği",
+    "price": 80,
+    "imageUrl": "test",
+    "categoryId": 5
+  },
+  {
+    "productName": "Kuru Fasulye",
+    "productDescription": "Pilav üstü servis edilen geleneksel kuru fasulye",
+    "price": 70,
+    "imageUrl": "test",
+    "categoryId": 5
+  },
+  {
+    "productName": "Taze Fasulye",
+    "productDescription": "Zeytinyağlı taze fasulye yemeği",
+    "price": 65,
+    "imageUrl": "test",
+    "categoryId": 5
+  },
+  {
+    "productName": "Sebzeli Türlü",
+    "productDescription": "Patates, patlıcan ve havuçla yapılan sebzeli sulu yemek",
+    "price": 75,
+    "imageUrl": "test",
+    "categoryId": 5
+  },
+  {
+    "productName": "Sütlaç",
+    "productDescription": "Fırında pişmiş klasik Türk sütlacı",
+    "price": 35,
+    "imageUrl": "test",
+    "categoryId": 6
+  },
+  {
+    "productName": "Künefe",
+    "productDescription": "Şerbetli, peynir dolgulu sıcak tatlı",
+    "price": 50,
+    "imageUrl": "test",
+    "categoryId": 6
+  },
+  {
+    "productName": "Baklava",
+    "productDescription": "Cevizli, şerbetli geleneksel tatlı",
+    "price": 45,
+    "imageUrl": "test",
+    "categoryId": 6
+  },
+  {
+    "productName": "İrmik Helvası",
+    "productDescription": "Cevizli, tereyağlı irmik helvası",
+    "price": 40,
+    "imageUrl": "test",
+    "categoryId": 6
+  },
+  {
+    "productName": "Ayran",
+    "productDescription": "Yoğurtla yapılmış ferahlatıcı içecek",
+    "price": 15,
+    "imageUrl": "test",
+    "categoryId": 7
+  },
+  {
+    "productName": "Kola",
+    "productDescription": "Soğuk, gazlı içecek",
+    "price": 20,
+    "imageUrl": "test",
+    "categoryId": 7
+  },
+  {
+    "productName": "Çay",
+    "productDescription": "Demleme siyah çay",
+    "price": 10,
+    "imageUrl": "test",
+    "categoryId": 7
+  },
+  {
+    "productName": "Portakal Suyu",
+    "productDescription": "Taze sıkılmış portakal suyu",
+    "price": 25,
+    "imageUrl": "test",
+    "categoryId": 7
+  }
+]

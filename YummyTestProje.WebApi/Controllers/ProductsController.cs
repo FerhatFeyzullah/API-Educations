@@ -13,15 +13,17 @@ namespace YummyTestProje.WebApi.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly IValidator<CreateProductDTO> _validator;
+        private readonly IValidator<CreateProductDTO> _validatorCreate;
+        private readonly IValidator<UpdateProductDTO> _validatorUpdate;
         private readonly ApiContext _context;
         private readonly IMapper _mapper;
 
-        public ProductsController(IValidator<CreateProductDTO> validator, ApiContext context, IMapper mapper)
+        public ProductsController(IValidator<CreateProductDTO> validator, ApiContext context, IMapper mapper, IValidator<UpdateProductDTO> validatorUpdate)
         {
-            _validator = validator;
+            _validatorCreate = validator;
             _context = context;
             _mapper = mapper;
+            _validatorUpdate = validatorUpdate;
         }
 
         [HttpGet]
@@ -44,7 +46,7 @@ namespace YummyTestProje.WebApi.Controllers
         {
 
             var value = _mapper.Map<Product>(createProductDTO);
-            var result = _validator.Validate(createProductDTO);
+            var result = _validatorCreate.Validate(createProductDTO);
             if (!result.IsValid)
             {
                 return BadRequest(result.Errors.Select(x => x.ErrorMessage));
@@ -57,6 +59,24 @@ namespace YummyTestProje.WebApi.Controllers
             }
 
 
+
+        }
+
+        [HttpPut]
+        public IActionResult UpdateProduct(UpdateProductDTO updateProductDTO)
+        {
+            var value = _mapper.Map<Product>(updateProductDTO);
+            var result = _validatorUpdate.Validate(updateProductDTO);
+            if (!result.IsValid)
+            {
+                return BadRequest(result.Errors.Select(x => x.ErrorMessage));
+            }
+            else
+            {
+                _context.Products.Update(value);
+                _context.SaveChanges();
+                return Ok("Urun Guncelleme basarili");
+            }
 
         }
     }
